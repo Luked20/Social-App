@@ -15,7 +15,7 @@ Um clone simplificado de rede social com recursos básicos.
 - Backend:
   - Node.js
   - Express
-  - MongoDB
+  - PostgreSQL
   - JWT para autenticação
 
 - Frontend:
