@@ -12,7 +12,7 @@ api.interceptors.request.use((config) => {
     config.headers.Authorization = `Bearer ${token}`;
   }
 
-  console.log('📤 Requisição:', {
+  console.log(' Requisição:', {
     url: config.url,
     method: config.method,
     data: config.data,
@@ -28,7 +28,7 @@ api.interceptors.request.use((config) => {
 
 // Interceptor para logar respostas
 api.interceptors.response.use((response) => {
-  console.log('📥 Resposta:', {
+  console.log(' Resposta:', {
     status: response.status,
     data: response.data,
     headers: response.headers
