@@ -22,7 +22,7 @@ api.interceptors.request.use((config) => {
   
   return config;
 }, (error) => {
-  console.error('❌ Erro na requisição:', error);
+  console.error(' Erro na requisição:', error);
   return Promise.reject(error);
 });
 
@@ -35,7 +35,7 @@ api.interceptors.response.use((response) => {
   });
   return response;
 }, (error) => {
-  console.error('❌ Erro na resposta:', {
+  console.error(' Erro na resposta:', {
     status: error.response?.status,
     data: error.response?.data,
     message: error.message,
